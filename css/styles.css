@@ -1,0 +1,51 @@
+@font-face {
+	font-family: PCSenior;
+	src: url(fonts/pcsenior.ttf); /* Font from https://www.1001fonts.com/pc-senior-font.html */
+}
+
+body{
+	font-family: PCSenior;
+	font-size: 10pt;
+	color: #DCDCDC;
+	background-color: #1E1E1E;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#main{
+	position: relative;
+	height:250px;
+}
+.vertical-center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+/* Home */
+.visibility, .class{
+	color: #569CD6;
+}
+
+.object{
+	color: #4EC9B0;
+}
+
+.string{
+	color: #D69D85;
+}
+
+
+/* Navigation */
+#navigation ul{
+	list-style-type:none;
+}
+#navigation a:link, #navigation a:visited{
+	color: #DCDCDC;
+	text-decoration: none;
+}
+#navigation a:hover{
+	color: #569CD6;
+}

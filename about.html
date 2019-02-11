@@ -14,23 +14,37 @@
 	<div id="main" >
 		<div>
 			<p><span class="visibility">public</span> <span class="class">class</span> <span class="object">FranciscoDomingues</span> {<br>
-			&emsp;<span class="visibility">private</span> <span class="class">void</span> AboutMe() {<br>
-			&emsp;&emsp;print(<span class="object">this</span>.toString());<br></p>
-			<p>Hello, my name's Francisco Domingues and I'm a AGE year old game developer and programmer from Portugal.</p>
-         <p>I am currently studying Videogames & Multimedia in Instituto Politécnico de Leiria and working on a couple of game projects on the side.</p>
-        <p> I started playing videogames at the age of 5 when I got my first Game Boy Color with a copy of Pokémon Gold and I've always been fascinated by videogames ever since, which I played throughout my childhood along with a fair share of collectible card games, like Magic The Gathering.</p>
-         <p>When it came time to pick a major I wanted to make videogames so I chose Computer Science which as it was the only accessible option, but dropped out after 3 years as a new major had opened and enroled in the Videogames & Multimedia major that I'm currently taking.</p>
+				&emsp;<span class="visibility">private</span> <span class="class">void</span> AboutMe() {<br>
+				&emsp;&emsp;print(<span class="object">this</span>.toString());<br></p>
+				<p>Hello, my name's Francisco Domingues and I'm a <span id="age"></span> year old game developer and programmer from Portugal.</p>
+				<p>I am currently studying Videogames & Multimedia in Instituto Politécnico de Leiria and working on a couple of game projects on the side.</p>
+				<p> I started playing videogames at the age of 5 when I got my first Game Boy Color with a copy of Pokémon Gold and I've always been fascinated by videogames ever since, which I played throughout my childhood along with a fair share of collectible card games, like Magic The Gathering.</p>
+				<p>When it came time to pick a major I wanted to make videogames so I chose Computer Science which as it was my best option to pursue game development, but dropped out after 3 years as a new major had opened and enroled in the Videogames & Multimedia major that I'm currently taking.</p>
 
-		<nav id="navigation">&emsp;<span class="visibility">public</span> <span class="class">void</span> Navigation() {<br>
-			<ul>
-				<li class="sel"><a href="index.html">Home()</a>;</li>
-				<li><a href="about.html">AboutMe()</a>;</li>
-				<li><a href="portfolio.html">GetPortfolio()</a>;</li>
-				<li><a href="contact.html">Contact()</a>;</li>
-			</ul>
-			&emsp;}</nav>
-		}
-	</div>
+				<nav id="navigation">&emsp;<span class="visibility">public</span> <span class="class">void</span> Navigation() {<br>
+					<ul>
+						<li class="sel"><a href="index.html">Home()</a>;</li>
+						<li><a href="about.html">AboutMe()</a>;</li>
+						<li><a href="portfolio.html">GetPortfolio()</a>;</li>
+						<li><a href="contact.html">Contact()</a>;</li>
+					</ul>
+				&emsp;}</nav>
+			}
+		</div>
 	</div>
 </body>
+<script type="text/javascript">
+	function getAge(dateString) {
+		var today = new Date();
+		var birthDate = new Date(dateString);
+		var age = today.getFullYear() - birthDate.getFullYear();
+		var m = today.getMonth() - birthDate.getMonth();
+		if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+			age--;
+		}
+		return age;
+	}
+	document.getElementById("age").innerHTML = getAge("1995/03/28");
+  //console.log('age: ' + getAge("1995/03/28"));
+</script>
 </html>

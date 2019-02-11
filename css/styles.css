@@ -26,10 +26,21 @@ body{
 	color: #D69D85;
 }
 
+/* About */
+#about{
+	padding-left: 2em;
+}
+
+#about a:link, #about a:visited{
+	color: #569CD6;
+	text-decoration: none;
+}
+
 
 /* Navigation */
 #navigation ul{
-	list-style-type:none;
+	list-style-type: none;
+	padding-inline-start: 2em;
 }
 #navigation a:link, #navigation a:visited{
 	color: #DCDCDC;

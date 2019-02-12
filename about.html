@@ -32,18 +32,18 @@
 			</ul>
 		&emsp;}</nav>
 	}
-	<script type="text/javascript">
-	function getAge(dateString) {
-		var today = new Date();
-		var birthDate = new Date(dateString);
-		var age = today.getFullYear() - birthDate.getFullYear();
-		var m = today.getMonth() - birthDate.getMonth();
-		if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-			age--;
+	<script>
+		function getAge(dateString) {
+			var today = new Date();
+			var birthDate = new Date(dateString);
+			var age = today.getFullYear() - birthDate.getFullYear();
+			var m = today.getMonth() - birthDate.getMonth();
+			if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+				age--;
+			}
+			return age;
 		}
-		return age;
-	}
-	document.getElementById("age").innerHTML = getAge("1995/03/28");
-</script>
+		document.getElementById("age").innerHTML = getAge("1995/03/28");
+	</script>
 </body>
 </html>

@@ -9,9 +9,8 @@ body{
 	color: #DCDCDC;
 	background-color: #1E1E1E;
 	width: 800px;
-	margin-left: auto;
-	margin-right: auto;
-	line-height: 1.25;
+	margin: 10px auto;
+	line-height: 1.3;
 }
 
 /* Home */
@@ -23,8 +22,9 @@ body{
 	color: #4EC9B0;
 }
 
-.string{
+.string, .string a:link, .string a:visited{
 	color: #D69D85;
+	text-decoration: none;
 }
 
 /* About */
@@ -35,6 +35,28 @@ body{
 #about a:link, #about a:visited{
 	color: #569CD6;
 	text-decoration: none;
+}
+
+/* Portfolio */
+#portfolio a:link, #portfolio a:visited{
+	color: #DCDCDC;
+	text-decoration: underline;
+}
+#portfolio a:hover{
+	text-decoration: none;
+}
+#portfolio ul{
+	list-style-type: none;
+	padding-left: 2em;
+}
+#game {
+	padding-left: 1em;
+}
+
+#game_logo{
+	display:block;
+	margin: 0 auto;
+	width: 50%;
 }
 
 

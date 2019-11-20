@@ -100,10 +100,6 @@ aside#screenshots{
 	height: 185px;
 }
 
-#navigation {
-	float:left;
-}
-
 /* Desenho Responsivo*/
 @media(max-width: 820px){
 	body{

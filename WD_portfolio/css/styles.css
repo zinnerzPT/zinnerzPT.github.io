@@ -51,8 +51,9 @@ body{
 }
 #game {
 	padding-left: 1em;
+	margin-right: 15px;
 	float: left;
-	width: calc(800px - 200px);
+	width: calc(800px - 330px);
 }
 
 #game_logo{
@@ -86,18 +87,18 @@ a:hover{
 
 aside#screenshots{
 	float: right;
-	width: 185px;
+	width: 300px;
 }
 
 #screenshots ul{
 	list-style-type: none;
 	padding: 0px;
 	margin: auto;
-	width: 185px;
+	width: 300px;
 }
 
 #screenshots img{
-	height: 185px;
+	width: 300px;
 }
 
 /* Desenho Responsivo*/
@@ -108,15 +109,52 @@ aside#screenshots{
 	}
 
 	#game {
-		width: calc(100% - 215px);
+		width: calc(100% - 330px);
 	}
 }
 
-@media(max-width: 499px){
+@media(max-width: 699px){
+
+	#game {
+		width: calc(100% - 20px);
+	}
+
+	aside#screenshots{
+		float: none;
+		width: auto;
+	}
+
+	#screenshots img{
+		max-width: 100%;
+    	height: auto;
+    	width: auto;
+	}
+
+	#screenshots li{
+    	margin: 15px;
+	}
+
+	#screenshots ul{
+		width: auto;
+	}
+
+	#game_logo{
+		display: block;
+		margin: 0 auto;
+		width: 50%;
+	}
+}
+
+/*@media(max-width: 499px){
+
+	#game {
+		width: calc(100% - 20px);
+	}
+
 	aside#screenshots{
 		float: none;
 		width: 200px;
 	}
-}
+}*/
 /*width auto
 float none*/

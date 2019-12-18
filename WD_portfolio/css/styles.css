@@ -56,7 +56,11 @@ body{
 	width: calc(800px - 330px);
 }
 
-#game_logo{
+#game_logo {
+	margin-top: 20px;
+}
+
+#game_logo img {
 	display: block;
 	margin: 0 auto;
 	width: 50%;
@@ -111,6 +115,10 @@ aside#screenshots{
 	#game {
 		width: calc(100% - 330px);
 	}
+
+	#game_logo img {
+		width: 400px;
+	}
 }
 
 @media(max-width: 699px){
@@ -138,11 +146,11 @@ aside#screenshots{
 		width: auto;
 	}
 
-	#game_logo{
+	/*#game_logo{
 		display: block;
 		margin: 0 auto;
 		width: 50%;
-	}
+	}*/
 }
 
 /*@media(max-width: 499px){
@@ -156,5 +164,11 @@ aside#screenshots{
 		width: 200px;
 	}
 }*/
+
+@media(max-width: 400px){
+	#game_logo img {
+		width: 100%;
+	}
+}
 /*width auto
 float none*/

@@ -42,13 +42,17 @@ body{
 	color: #DCDCDC;
 	text-decoration: underline;
 }
+
 #portfolio a:hover{
 	text-decoration: none;
 }
+
 #portfolio ul{
 	list-style-type: none;
 	padding-left: 2em;
 }
+
+/* Game Pages */
 #game {
 	padding-left: 1em;
 	margin-right: 15px;
@@ -66,32 +70,6 @@ body{
 	width: 50%;
 }
 
-
-/* Navigation */
-#navigation{
-	float:left;
-}
-#navigation ul{
-	list-style-type: none;
-	padding-left: 2em;
-}
-#navigation a:link, #navigation a:visited{
-	color: #DCDCDC;
-	text-decoration: none;
-}
-#navigation a:hover{
-	color: #569CD6;
-}
-
-
-/* Cenas Novas que faltam arrumar*/
-a{
-	color: #DCDCDC;
-}
-a:hover{
-	color: #569CD6;
-}
-
 aside#screenshots{
 	float: right;
 	width: 300px;
@@ -103,6 +81,7 @@ aside#screenshots{
 	padding-top: 25px;
 	height: 0;
 }
+
 .trailer iframe {
 	position: absolute;
 	top: 0;
@@ -121,6 +100,39 @@ aside#screenshots{
 
 #screenshots img{
 	width: 300px;
+}
+
+/* Navigation */
+#navigation{
+	float:left;
+}
+
+#navigation ul{
+	list-style-type: none;
+	padding-left: 2em;
+}
+
+#navigation a:link, #navigation a:visited{
+	color: #DCDCDC;
+	text-decoration: none;
+}
+
+#navigation a:hover{
+	color: #569CD6;
+}
+
+/* Contact */
+#contact{
+	padding-left: 2em;
+}
+
+/* Misc. */ 
+a{
+	color: #DCDCDC;
+}
+
+a:hover{
+	color: #569CD6;
 }
 
 /* Desenho Responsivo*/
@@ -167,30 +179,10 @@ aside#screenshots{
 	#screenshots ul{
 		width: auto;
 	}
-
-	/*#game_logo{
-		display: block;
-		margin: 0 auto;
-		width: 50%;
-	}*/
 }
-
-/*@media(max-width: 499px){
-
-	#game {
-		width: calc(100% - 20px);
-	}
-
-	aside#screenshots{
-		float: none;
-		width: 200px;
-	}
-}*/
 
 @media(max-width: 400px){
 	#game_logo img {
 		width: 100%;
 	}
 }
-/*width auto
-float none*/

@@ -5,7 +5,7 @@
 	<title>Overworld</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/normalize.css">
-	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="../css/styles_overworld.css">
 	<link rel="stylesheet" href="TemplateData/style.css">
 	<script src="overworld/TemplateData/UnityProgress.js"></script>
 	<script src="overworld/Build/UnityLoader.js"></script>
@@ -16,27 +16,24 @@
 <body>
 	<header id="title">
 		<div id="game_logo"><img src="../img/overworld_logo.png" alt="Overworld Logo" title="Overworld"></div>
-	</header>
+	</header><br><br>
 	<p><span class="visibility">public</span> <span class="class">class</span> <span class="object">Overworld</span> : <span class="object">Project</span> {<br>
 		<div id="game" >
 			<span class="class">string</span> name = <span class="string">"Overworld"</span>;<br>
-			<span class="class">string</span> studio = <span class="string">"Seaward Studios"</span>;<br>
-			<span class="class">string</span> platform = <span class="string">"Windows"</span>;<br>
+			<span class="class">string</span> studio = <span class="string">"Sour Skit Studio"</span>;<br>
+			<span class="class">string</span> platform = <span class="string">"Windows/WebGL"</span>;<br>
 			<span class="class">string</span> url = <span class="string">"<a href="https://zinnerzpt.itch.io/overworld">https://<wbr>zinnerzpt.<wbr>itch.<wbr>io/<wbr>overworld</a>"</span>;
 
-			<p>Overworld is a game.</p>
+			<p>Overworld is a simple and short platformer where you collect all 3 coins and head to the exit, but not everything is as it seems.</p>
+			<p>This game was made for the <a href="https://itch.io/jam/nokiajam2"> Nokia 3310 Jam 2</a> by a team of two and it placed 14th out of 140 entries. The Jam's theme was "Death is Good"</p>
+			<p>Both team members did the game design and I handled the programming while my teammate did the art.</p>
+			<p>Below is a playable version of the game.</p>
 
 			<div class="webgl-content">
 				<div id="unityContainer"></div>
 			</div>
+			<br>
 		</div>
-		<aside id=screenshots>
-			<ul>
-				<li><img src="../img/overworld_screenshot_1.png" alt="screenshot" class="screenshot"></li>
-				<li><img src="../img/overworld_screenshot_2.jpg" alt="screenshot" class="screenshot"></li>
-				<li><img src="../img/overworld_screenshot_3.jpg" alt="screenshot" class="screenshot"></li>
-			</ul>
-		</aside>
 		<nav id="navigation">&emsp;<span class="visibility">public</span> <span class="class">void</span> Navigation() {<br>
 			<ul>
 				<li class="sel"><a href="../index.html">Main()</a>;</li>

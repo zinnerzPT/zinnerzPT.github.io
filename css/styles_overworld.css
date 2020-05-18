@@ -27,37 +27,12 @@ body{
 	text-decoration: none;
 }
 
-/* About */
-#about{
-	padding-left: 2em;
-}
-
-#about a:link, #about a:visited{
-	color: #569CD6;
-	text-decoration: none;
-}
-
-/* Portfolio */
-#portfolio a:link, #portfolio a:visited{
-	color: #DCDCDC;
-	text-decoration: underline;
-}
-
-#portfolio a:hover{
-	text-decoration: none;
-}
-
-#portfolio ul, #skills ul{
-	list-style-type: none;
-	padding-left: 2em;
-}
-
 /* Game Pages */
 #game {
 	padding-left: 1em;
 	margin-right: 15px;
 	float: left;
-	width: calc(1000px - 330px);
+	width: 1000px;
 }
 
 #game_logo {
@@ -75,31 +50,9 @@ aside#screenshots{
 	width: 300px;
 }
 
-.trailer {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-}
-
-.trailer iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
+#unityContainer{
 	width: 100%;
-	height: 100%;
-	border: 0px;
-}
-
-#screenshots ul{
-	list-style-type: none;
-	padding: 0px;
-	margin: auto;
-	width: 300px;
-}
-
-#screenshots img{
-	width: 300px;
+	height: auto;
 }
 
 /* Navigation */
@@ -121,11 +74,6 @@ aside#screenshots{
 	color: #569CD6;
 }
 
-/* Contact */
-#contact{
-	padding-left: 2em;
-}
-
 /* Misc. */ 
 a{
 	color: #DCDCDC;
@@ -142,10 +90,6 @@ a:hover{
 		margin: 10px;
 	}
 
-	#game {
-		width: calc(100% - 330px);
-	}
-
 	#game_logo img {
 		width: 400px;
 	}
@@ -155,29 +99,6 @@ a:hover{
 
 	#game {
 		width: calc(100% - 20px);
-	}
-
-	aside#screenshots{
-		float: none;
-		width: auto;
-	}
-
-	.trailer{
-		clear: both;
-	}
-	
-	#screenshots img{
-		max-width: 100%;
-    	height: auto;
-    	width: auto;
-	}
-
-	#screenshots li{
-    	margin: 15px;
-	}
-
-	#screenshots ul{
-		width: auto;
 	}
 }
 

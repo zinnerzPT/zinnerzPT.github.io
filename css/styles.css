@@ -75,6 +75,11 @@ aside#screenshots{
 	width: 300px;
 }
 
+#unityContainer{
+	width: calc(1000px - 330px);
+	height: auto;
+}
+
 .trailer {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
@@ -146,6 +151,10 @@ a:hover{
 		width: calc(100% - 330px);
 	}
 
+	#unityContainer{
+		width: calc(100% - 330px);
+	}
+
 	#game_logo img {
 		width: 400px;
 	}
@@ -154,6 +163,10 @@ a:hover{
 @media(max-width: 699px){
 
 	#game {
+		width: calc(100% - 20px);
+	}
+	
+	#unityContainer{
 		width: calc(100% - 20px);
 	}
 

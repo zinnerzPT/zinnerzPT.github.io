@@ -76,7 +76,7 @@ aside#screenshots{
 }
 
 #unityContainer{
-	width: calc(1000px - 330px);
+	width: 100%;
 	height: auto;
 }
 
@@ -152,7 +152,7 @@ a:hover{
 	}
 
 	#unityContainer{
-		width: calc(100% - 330px);
+		width: 100%;
 	}
 
 	#game_logo img {
@@ -165,9 +165,9 @@ a:hover{
 	#game {
 		width: calc(100% - 20px);
 	}
-	
+
 	#unityContainer{
-		width: calc(100% - 20px);
+		width: 100%;
 	}
 
 	aside#screenshots{

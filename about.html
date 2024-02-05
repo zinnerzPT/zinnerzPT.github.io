@@ -16,11 +16,14 @@
 			&emsp;<span class="visibility">private</span> <span class="class">void</span> AboutMe() {<br>
 			&emsp;&emsp;print(<span class="object">this</span>.toString());<br></p>
 			<div id="about">
-				<p>Hello, my name is Francisco Domingues and I'm a <span id="age"></span> year old game developer and programmer from Portugal.</p>
-				<p>I am currently studying <a href="http://games.ipleiria.pt/">Videogames & Multimedia</a> at Instituto Politécnico de Leiria and working on a couple of game projects on my free time.</p>
+				<p>Hello, I am Francisco and I'm a game developer and programmer from Portugal.</p>
 				<p>I started playing videogames at the age of 5 when I got my first Game Boy Color with a copy of Pokémon Gold, and I've been fascinated by videogames ever since. I continued playing videogames throughout my childhood on the Playstation 2 and PC, and eventually found my way to collectable card games as well, starting with Yu-Gi-Oh! when I was only 9 and figuring it out on the school playground and eventually Magic The Gathering when I was 15.</p>
-				<p>When the time came for me to pick a major I decided that I wanted to develop games so, at the time, I picked Computer Science which was the closest and best option for me to be able to pursue game development. Later on, after 3 years, I decided to drop out, as a new course was made available, one that was fully focused on making games. I then enrolled in the Videogames & Multimedia major, which I'm currently a finalist of.</p>
-				<!-- <p>Earlier in 2019 I started <a href="https://www.linkedin.com/company/sour-skit-studio/">Sour Skit Studio</a> with <a href="https://www.instagram.com/ritadimac_art/">Rita Macedo</a> and we're currently developing a <a href="portfolio/haram_miraeya.html">puzzle game</a>. -->
+				<p>When the time came for me to pick a degree, I decided that I wanted to develop games so, at the time, I picked Computer Science which was the closest and best option for me to be able to pursue game development. Later on, after 3 years, I decided to drop out, as a new course was made available, one that was fully focused on making games. I then enrolled in the Videogames & Multimedia bachelor's degree.</p>
+				<p>I completed my bachelor's degree of <a href="http://games.ipleiria.pt/">Videogames & Multimedia</a> in 2021 and I have been professionally working as a Unity developer since.</p>
+				<p>I started my professional life through a four month internship with the porting team at <a href="https://twitter.com/Nerd_Monkeys">Nerd Monkeys</a> where I dabbled into developing for the Nintendo Switch, having been credited on <a href="https://www.nintendo.com/us/store/products/sgc-short-games-collection-1-switch/">SGC - Short Games Collection</a>.</p>
+				<p>I worked, as part of a two person development team, on <a href="https://www.cm-palmela.pt/viver/museu-e-patrimonio/servico-educativo/recursos-pedagogicos/jogo-digital-capelo-e-ivens">Capelo e Ivens - Explorando Africa</a> as part of a partnership between <a href="https://www.redcatpig.com/">Redcatpig</a> and <a href="https://www.cm-palmela.pt/">Câmara Municipal de Palmela</a>. I worked on all the programming and Unity integration, along with sharing the Game Design workload with the other team member.</p>
+				<p>As a member of Redcatpig, I worked on several other projects. I worked as a gameplay programmer on <a href="https://cryptopolisgame.com/en">Cryptopolis</a> for a little over a year, where I was in charge of a lot of the item, inventory and furniture placement systems.</p>
+				<p>I was the lead developer on a 360 degree video player - <a href="https://play.google.com/store/apps/details?id=com.dayholi.dive">Dayholi</a> - for the <a href="https://www.jio.com/dive">JioDive</a> VR platform</p>
 			</div>
 			<p>&emsp;}</p>
 		</div>
@@ -33,18 +36,5 @@
 			</ul>
 		&emsp;}<br>
 	}</nav>
-	<script>
-		function getAge(dateString) {
-			var today = new Date();
-			var birthDate = new Date(dateString);
-			var age = today.getFullYear() - birthDate.getFullYear();
-			var m = today.getMonth() - birthDate.getMonth();
-			if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-				age--;
-			}
-			return age;
-		}
-		document.getElementById("age").innerHTML = getAge("1995/03/28");
-	</script>
 </body>
 </html>

@@ -7,6 +7,44 @@
     <title>Francisco Domingues</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        /* Hero */
+        #hero {
+            position: relative;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .hero-overlay .container-lg {
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 1rem;
+            color: white;
+        }
+
+        /* ensure carousel sits behind */
+        #carousel {
+            position: relative;
+            z-index: 1;
+        }
+
+        #carousel .carousel-item img {
+            height: 80vh;
+            object-fit: cover;
+        }
+
+        .carousel-item img {
+            filter: brightness(0.3);
+        }
+    </style>
 </head>
 
 <body>
@@ -35,55 +73,52 @@
         </div>
     </nav>
 
-    <!-- main carousel -->
-    <section id="carousel">
-        <div class="container-fluid d-none d-md-block">
-            <div id="main-carousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- hero -->
+    <section id="hero" class="position-relative my-3">
+        <!-- carousel -->
+        <div class="container-fluid ">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://placehold.co/1920x1080?text=example+1" class="d-block w-100" alt="">
+                        <img src="https://placehold.co/1920x1080?text=example+1" class="d-block w-100"
+                            alt="Project preview 1">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://placehold.co/1920x1080?text=example+2" class="d-block w-100" alt="">
+                        <img src="https://placehold.co/1920x1080?text=example+2" class="d-block w-100"
+                            alt="Project preview 2">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://placehold.co/1920x1080?text=example+3" class="d-block w-100" alt="">
+                        <img src="https://placehold.co/1920x1080?text=example+3" class="d-block w-100"
+                            alt="Project preview 3">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#main-carousel"
-                    data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#main-carousel"
-                    data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
-    </section>
 
-    <!-- main image & about text -->
-    <section id="about">
-        <div class="container-lg">
-            <div class="row g-4 justify-content-center align-items-center">
-                <div class="col-md-3 text-center d-none d-md-block">
-                    <img src="/assets/photo.jpeg" class="img-fluid" alt="photo">
-                </div>
-                <div class="col-md-7 text-center text-md-start">
-                    <h1>
-                        <div class="display-2">Francisco Domingues</div>
-                        <div class="display-5 text-muted">Gameplay Programmer</div>
-                    </h1>
-                    <p class="lead my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus id nam
-                        maiores. Ea animi, atque laborum, velit, sed illum consequuntur ducimus ad delectus similique
-                        accusamus magnam quibusdam assumenda porro dolore ipsum vitae? Porro voluptatum nemo illo
-                        voluptatibus impedit. Natus beatae ad autem corrupti modi atque non labore, id itaque. Vel saepe
-                        illum incidunt fugiat vitae earum id, nihil non sapiente recusandae adipisci! At impedit
-                        distinctio est illo doloremque eveniet. Minima repudiandae delectus perspiciatis autem aliquid
-                        sapiente illum. Quae praesentium nemo vero, tempora alias fugiat, numquam libero quo beatae
-                        esse, natus modi cupiditate voluptate? Iure quis magnam illo commodi soluta est!</p>
+        <!-- about (overlay) -->
+        <div id="about" class="hero-overlay">
+            <div class="container-lg">
+                <div class="row justify-content-center align-items-center text-center text-md-start">
+                    <div class="col-md-3 d-none d-md-block">
+                        <img src="/assets/photo.jpeg" class="img-fluid" alt="photo">
+                    </div>
+                    <div class="col-md-9">
+                        <h1 class="display-5 text-light mb-2">Francisco Domingues</h1>
+                        <h2 class="text-light fw-normal mb-4">Gameplay Programmer</h2>
+                        <p class="lead text-light mt-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, ipsum. Atque cumque
+                            exercitationem doloremque, repudiandae unde itaque tempora eos odit, asperiores obcaecati,
+                            voluptatem nam quos saepe deserunt tempore iste possimus.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
